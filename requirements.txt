@@ -1,0 +1,30 @@
+# --- START OF FILE requirements.txt ---
+# Core Web Framework & Server
+flask
+flask-cors
+waitress # Production WSGI server
+python-dotenv # For environment variables
+
+# Data Handling
+pandas
+numpy
+
+# Excel File Reading Engines (install as needed or include all)
+openpyxl # For .xlsx
+xlrd     # For .xls
+pyxlsb   # For .xlsb
+
+# NLP/ML Models
+transformers[torch] # Or transformers[tensorflow] based on your backend
+sentence-transformers
+torch # Or tensorflow - needed by transformers/sentence-transformers
+
+# Database (for SQLite, built-in to Python, no extra pip package needed)
+# If switching to PostgreSQL, add:
+# psycopg2-binary
+
+# Frontend (Run separately using Streamlit CLI)
+streamlit
+
+# Logging (built-in)
+# --- END OF FILE requirements.txt ---
